@@ -7,22 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Assignment3';
-  count=0;
-  applyNewCSS = false;
   clickCount:any=[];
+  showSecret=false;
 
  onClick(){
-   console.log(this.applyNewCSS);
-  this.count++;
-  this.clickCount.push(this.count.toString());
- }
-
- getColor(){
-   if(this.count >= 5) {
-    this.applyNewCSS=true;
-    return "Blue"
-   }
-    return "White"
+  this.clickCount.push(this.clickCount.length+1);
+  this.showSecret = !this.showSecret;
   
  }
+
 }
