@@ -1,0 +1,10 @@
+
+<div class="form-group">
+  <label for="usr">Name:</label>
+  <input type="text" class="form-control" [(ngModel)]="username">
+</div>
+<p style="color:green">Username is {{username}}</p>
+
+<button type="button" class="btn btn-primary" [disabled]="checkEmpty()" (click)="resetUsername()">Check</button>
+
+
