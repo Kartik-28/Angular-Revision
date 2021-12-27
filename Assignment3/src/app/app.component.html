@@ -1,0 +1,5 @@
+<br>
+<button type="button" class="btn btn-primary" (click)="onClick()">Display Details</button>
+<br>
+<p *ngIf="count % 2 == 0 ? true : false">Secret password = Tuna</p>
+<p *ngFor="let value of clickCount" [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{whiteFont : applyNewCSS === true}"> Click {{value}}</p>
